@@ -15,7 +15,10 @@ Window {
     Button {
         id: b1
         onClicked: {
-            var newObject = Qt.createQmlObject('import QtQuick 2.0; Rectangle {color: "red"; width: 500; height: 500}', rect1, "dynamicSnippet1");
+            var newObject = Qt.createQmlObject(
+                'import QtQuick 2.0; Rectangle {color: "red"; width: 500; height: 500}', 
+                rect1, 
+                "dynamicSnippet1");
         }
     }
 }
